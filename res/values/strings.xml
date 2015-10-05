@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PMI-ACP Practice</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test_screen">Test Screen</string>    
+    <string name="ad_unit_id">a1534007bbedc52</string>
+	<string name="ad_unit_id2">a15346598fe3c01</string>
+</resources>

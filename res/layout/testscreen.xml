@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/box"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/QuestionNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="QuestionNumber"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/box"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:text="Question"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View style="@style/Divider" />
+
+            <RadioGroup
+                android:id="@+id/OptionGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/OptionA"
+                    style="@style/optionsRadio"
+                    android:layout_width="match_parent"
+                    android:text="OptionA" />
+
+                <RadioButton
+                    android:id="@+id/OptionB"
+                    style="@style/optionsRadio"
+                    android:text="OptionB" />
+
+                <RadioButton
+                    android:id="@+id/OptionC"
+                    style="@style/optionsRadio"
+                    android:text="OptionC" />
+
+                <RadioButton
+                    android:id="@+id/OptionD"
+                    style="@style/optionsRadio"
+                    android:text="OptionD" />
+            </RadioGroup>
+
+            <View style="@style/Divider" />
+
+            <TextView
+                android:id="@+id/Explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Explanation"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <View style="@style/Divider" />
+
+            <Button
+                android:id="@+id/SubmitAns_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/submitbtn"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Submit Answer"
+                android:textColor="#2A2B2A"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/submitbtn"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Next Question"
+                android:textColor="#2A2B2A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Visit www.agile4practice.com for real time PMI-ACP mock test."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+
+    
+
+</LinearLayout>
